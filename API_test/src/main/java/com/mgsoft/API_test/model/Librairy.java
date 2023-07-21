@@ -1,6 +1,5 @@
 package com.mgsoft.API_test.model;
 
-import com.mgsoft.API_test.model.Address;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -10,10 +9,10 @@ public class Librairy {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_livre;
+    private long id;
 
     @Column
-    private String name;
+    private String title;
 
     @OneToOne
     @JoinColumn(name = "address_id")

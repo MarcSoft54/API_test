@@ -2,13 +2,14 @@ package com.mgsoft.API_test.service;
 
 import com.mgsoft.API_test.model.Etudiant;
 import com.mgsoft.API_test.repository.EtudiantRepository;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Data
 public class EtudiantService {
 
-    @Autowired
     EtudiantRepository etudiantRepository;
 
     public Iterable<Etudiant> getEtudiants(){

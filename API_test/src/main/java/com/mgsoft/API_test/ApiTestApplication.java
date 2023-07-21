@@ -38,9 +38,9 @@ public class ApiTestApplication implements CommandLineRunner {
 		a.setId(NULL);
 		a.setLocation("Ranger numero 1");
 
+		l.setId(NULL);
+		l.setTitle("le petit dauphin bleu");
 
-		l.setId_livre(NULL);
-		l.setName("le petit dauphin bleu");
 
 		e.setId(1);
 		e.setNom("william");
